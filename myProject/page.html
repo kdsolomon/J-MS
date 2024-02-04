@@ -1,0 +1,61 @@
+<!DOCTYPE htmlUBLIC "-//W3C//DT HTML 4.01//EN"><html>
+<head>
+ <title>My Page</title>
+ <style type="text/">
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: purple;
+      background-color: #d8da3d;
+    }
+    h1 {
+      font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+    }
+    .navbar {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      background-color: #d8da3d;
+    }
+    .navbar li {
+      border-bottom: 1px solid purple;
+    }
+    .navbar a {
+      display: block;
+      color: purple;
+      text-decoration: none;
+      padding: 10px;
+    }
+    .navbar a:hover {
+      background-color: #ffffe6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <li><a href="family_pages/family_member_1.html">Family Member 1</a></li>
+    <li><a href="family_pages/family_member_2.html">Family Member 2</a></li>
+    <li><a href="family_pages/family_member_3.html">Family Member 3</a></li>
+    <li><a href="family_pages/family_member_4.html">Family Member 4</a></li>
+    <li><a href="family_pages/family_member_5.html">Family Member 5</a></li>
+  </div>
+
+  <h1>Welcome to My Family Page</h1>
+
+  <p>Please enter your username and password to access the family pages:</p>
+
+  <form action="family_pages/validate_credentials.php" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br>
+    <input type="submit" value="Log In">
+  </form>
+</body>
+</html>
